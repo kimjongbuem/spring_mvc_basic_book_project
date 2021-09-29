@@ -31,4 +31,32 @@ public class BoardDAOMyBatis implements BoardDAO{
 		
 	}
 
+	@Override
+	public int deleteAll() {
+		// TODO Auto-generated method stub
+		return sqlSessionTemplate.delete("deleteAll");
+	}
+
+	@Override
+	public int update(BoardVO boardVO) {
+		return sqlSessionTemplate.update("update", boardVO);
+	}
+
+	@Override
+	public void insert(BoardVO boardVO) {
+		sqlSessionTemplate.insert("insert", boardVO);
+	}
+
+	@Override
+	public int updateReadCount(int seq) {
+		return sqlSessionTemplate.update("updateCount", seq);
+	}
+
+	@Override
+	public int delete(BoardVO boardVO) {
+		// TODO Auto-generated method stub
+		return sqlSessionTemplate.delete("delete", boardVO);
+	}
+
+
 }

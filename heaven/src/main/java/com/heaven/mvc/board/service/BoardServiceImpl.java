@@ -32,4 +32,20 @@ public class BoardServiceImpl implements BoardService{
 		return boardDAO.select(seq);
 	}
 
+	@Override
+	public void write(BoardVO boardVO) {
+		boardDAO.insert(boardVO);
+	}
+
+	@Override
+	public void edit(BoardVO boardVO) {
+		boardDAO.update(boardVO);
+	}
+
+	@Override
+	public int delete(BoardVO boardVO) {
+		// TODO Auto-generated method stub
+		return boardDAO.delete(boardVO);
+	}
+
 }
