@@ -1,6 +1,8 @@
 package com.heaven.mvc.board.domain;
 
 
+import java.sql.Timestamp;
+
 import org.apache.ibatis.type.Alias;
 
 import lombok.AllArgsConstructor;
@@ -19,4 +21,5 @@ public class BoardVO {
 	private String writer;
 	private int password;
 	private int cnt;
+	private Timestamp regDate;
 }
