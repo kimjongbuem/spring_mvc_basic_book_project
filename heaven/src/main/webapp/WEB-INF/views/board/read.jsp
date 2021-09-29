@@ -33,7 +33,8 @@
 	</table>
 	
 	<div>
-		<a href="<c:url value="/board/edit/${board.seq}"/>">수정</a>
+		<a href="<c:url value="/board/edit/${boardVO.seq}"/>">수정</a>
+		<a href="<c:url value="/board/delete/${boardVO.seq}"/>">삭제</a>
 		<a href="<c:url value="/board/list"/>">목록으로 이동</a>
 	</div>
 </body>
