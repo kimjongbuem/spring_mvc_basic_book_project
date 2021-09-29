@@ -21,5 +21,6 @@ public class BoardVO {
 	private String writer;
 	private int password;
 	private int cnt;
+	private String content;
 	private Timestamp regDate;
 }
